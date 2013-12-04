@@ -8,5 +8,6 @@ MetubeCohort3::Application.routes.draw do
   post '/videos' => 'videos#create'
   put '/videos/:id' => 'videos#update'
   patch '/videos/:id' => 'videos#update'
+  delete '/videos/:id' => 'videos#destroy'
 
 end
