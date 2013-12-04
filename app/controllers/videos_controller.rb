@@ -5,7 +5,7 @@ class VideosController < ApplicationController
     @video = Video.find(id)
   end
 
-  def show_all
+  def index
     @videos = Video.all
   end
 
@@ -37,6 +37,6 @@ class VideosController < ApplicationController
 
   private
   def video_params
-  	params.require(:video).permit(:title, :description, :youtube_id)
+  	params.require(:video).permit(:title, :description, :youtube_id, :subtitle)
   end
 end
