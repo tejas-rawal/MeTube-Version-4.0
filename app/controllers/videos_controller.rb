@@ -9,4 +9,7 @@ class VideosController < ApplicationController
     @videos = Video.all
   end
 
+  def new
+  	@video = Video.new
+  end
 end
