@@ -29,6 +29,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'unirest'
+
+gem 'figaro'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
